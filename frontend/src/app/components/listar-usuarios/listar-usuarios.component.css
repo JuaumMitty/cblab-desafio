@@ -1,0 +1,43 @@
+.lista {
+    max-width: 1260px;
+    margin-top: 120px;
+}
+
+.lista__titulo {
+    background-color: #067BC2;
+    color: #FFFFFF;
+    font-family: 'Merienda', cursive;
+    font-weight: 700;
+}
+
+.lista__valores {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.lista__valores > td {
+    vertical-align: middle;
+}
+.lista__valores:hover {
+    background-color: #F9F9F9;
+}
+
+.btn__editar {
+    background-color: #F37748;
+    margin-right: 16px;
+}
+
+.btn__excluir {
+    background-color: #D56062;
+}
+
+.btn__editar, .btn__excluir {
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    transition: all 150ms; 
+}
+
+.btn__editar:hover, .btn__excluir:hover {
+    opacity: 0.8;
+}

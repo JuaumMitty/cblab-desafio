@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 lista">
+            <table class="table">
+                <thead>
+                    <tr class="lista__titulo">
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Senha</th>
+                        <th>Administrador</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of usuario" class="lista__valores">
+                        <td>{{item.id}}</td>
+                        <td>{{item.nome}}</td>
+                        <td>{{item.email}}</td>
+                        <td>{{item.password}}</td>
+                        <td><input type="checkbox" value="{{item.userAdmin}}" disabled>
+                        </td>
+                        <td><button class="btn__editar">Editar</button><button class="btn__excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
