@@ -1,9 +1,18 @@
-<div class="container">
+<app-navbar></app-navbar>
+<div class="container lista__container">
     <div class="row justify-content-center">
-        <div class="col-12 lista">
+        <div class="col-md-12">
+            <h1 class="lista__titulo">Lista de usuários</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center lista">
+        <div class="col-md-2">
+            <a href="cdUsuarios"><button class="btn__cadastrar">Cadastrar usuário</button></a>
+        </div>
+        <div class="col-md-10">
             <table class="table">
                 <thead>
-                    <tr class="lista__titulo">
+                    <tr class="lista__tabelaTitulo">
                         <th>Id</th>
                         <th>Nome</th>
                         <th>E-mail</th>
