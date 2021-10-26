@@ -23,7 +23,7 @@ export class CrudService {
   }
 
   editarUsuario(id: any, usuario: UsuarioModel): Observable<any> {
-    return this.http.put("http://127.0.0.1:8000/myapp/".concat(id), usuario)
+    return this.http.put("http://127.0.0.1:8000/myapp/" + id + "/", usuario)
   }
 
   deletarUsuario(id: any) {

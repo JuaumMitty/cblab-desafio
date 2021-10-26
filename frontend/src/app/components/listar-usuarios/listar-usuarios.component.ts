@@ -26,12 +26,6 @@ export class ListarUsuariosComponent implements OnInit {
     })
   }
 
-  listarUser(id: number) {
-    this.crudService.listarUser(id).subscribe(usuario => {
-      this.usuario = usuario;
-    });
-  }
-
   editar(id: number) {
     this.router.navigate(['/editar', id]);
   }
