@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 form">
+            <form class="form__action">
+                <input type="text" name="id" value="usuarios.id" [(ngModel)]="usuarios.id" hidden>
+                <label class="form__label" for="nome">Nome:</label>
+                <input class="form__control" type="text" name="nome" [(ngModel)]="usuarios.nome">
+                <label class="form__label" for="email">E-mail:</label>
+                <input class="form__control" type="email" name="email" [(ngModel)]="usuarios.email">
+                <label class="form__label" for="password">Senha:</label>
+                <input class="form__control" type="password" name="password" [(ngModel)]="usuarios.password">
+                <div class="form_checkbox">
+                    <label for="userAdmin">Administrador:</label>
+                    <input name="userAdmin" type="checkbox" [(ngModel)]="usuarios.userAdmin">
+                </div>
+                <div class="form__btn">
+                    <a href="listarUsuarios" class="form__btnCancelar">Cancelar</a>
+                    <button type="submit" class="form__btnSalvar"
+                        (click)="editarUsuario(usuarios.id)">Atualizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

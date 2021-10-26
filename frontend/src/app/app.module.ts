@@ -9,7 +9,10 @@ import { ListarUsuariosComponent } from './components/listar-usuarios/listar-usu
 
 import { HttpClientModule } from '@angular/common/http';
 import { CrudService } from './services/crud.service';
-import { CriarEditarUsuariosComponent } from './components/criar-editar-usuarios/criar-editar-usuarios.component';
+
+import { FormsModule } from '@angular/forms';
+import { CriarComponent } from './components/criar/criar.component';
+import { EditarComponent } from './components/editar/editar.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,14 @@ import { CriarEditarUsuariosComponent } from './components/criar-editar-usuarios
     LoginComponent,
     NavbarComponent,
     ListarUsuariosComponent,
-    CriarEditarUsuariosComponent
+    CriarComponent,
+    EditarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     HttpClientModule,

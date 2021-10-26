@@ -27,9 +27,9 @@
                         <td>{{item.nome}}</td>
                         <td>{{item.email}}</td>
                         <td>{{item.password}}</td>
-                        <td><input type="checkbox" value="{{item.userAdmin}}" disabled>
-                        </td>
-                        <td><button class="btn__editar">Editar</button><button class="btn__excluir">Excluir</button>
+                        <td><input type="checkbox" value="{{item.userAdmin}}" disabled></td>
+                        <td><button class="btn__editar" (click)="editar(item.id)">Editar</button><button
+                                class="btn__excluir" (click)="deletarUsuario(item.id)">Excluir</button>
                         </td>
                     </tr>
                 </tbody>
