@@ -1,6 +1,7 @@
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
+    <div class="row justify-content-center align-items-center form__container">
+        <div class="col-md-4 form">
+            <h1 class="form__titulo">Entrar</h1>
             <form class="form__login">
                 <label class="form__label" for="email">E-mail:</label>
                 <input class="form__control" name="email" type="email">
@@ -8,7 +9,9 @@
                 <label class="form__label" for="password">Senha:</label>
                 <input class="form__control" name="password" type="password">
 
-                <button type="submit">Entrar</button>
+                <div class="form__btn">
+                    <button class="form__btn" type="submit"><a href="listarUsuarios">Fazer login</a></button>
+                </div>
             </form>
         </div>
     </div>

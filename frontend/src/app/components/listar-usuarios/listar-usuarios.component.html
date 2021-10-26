@@ -26,12 +26,20 @@
                         <td>{{item.id}}</td>
                         <td>{{item.nome}}</td>
                         <td>{{item.email}}</td>
-                        <td>{{item.password}}</td>
+                        <td class="lista__senha">{{item.password}}</td>
                         <td><input type="checkbox" value="{{item.userAdmin}}" disabled></td>
                         <td><button class="btn__editar" (click)="editar(item.id)">Editar</button><button
                                 class="btn__excluir" (click)="deletarUsuario(item.id)">Excluir</button>
                         </td>
                     </tr>
+                    <tr class="lista__valores">
+                        <td>2</td>
+                        <td>João</td>
+                        <td>jjaoovictorp</td>
+                        <td class="lista__senha">02053023,</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><button class="btn__editar">Editar</button><button class="btn__excluir">Excluir</button>
+                        </td>
                 </tbody>
             </table>
         </div>

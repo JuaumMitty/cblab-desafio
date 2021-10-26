@@ -8,18 +8,18 @@
 }
 
 .lista__titulo {
-    color: #404040;
+    color: #2F2D2E;
     font-size: 72px;
     text-align: center;
-    font-family: 'Merienda', cursive;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 
 
 .lista__tabelaTitulo {
-    background-color: #067BC2;
+    background-color: #2F2D2E;
     color: #FFFFFF;
-    font-family: 'Merienda', cursive;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
     border-radius: 3px 3px 0 0;
 }
@@ -36,25 +36,25 @@
 }
 
 .btn__editar {
-    background-color: #F37748;
+    background-color: #F18F01;
     margin-right: 16px;
 }
 
 .btn__excluir {
-    background-color: #D56062;
+    background-color: #D33F49;
 }
 
 .btn__cadastrar {
-    background-color: #00B33B;
-
+    background-color: #99C24D;
     width: 100%;
 }
 
 .btn__editar, .btn__excluir, .btn__cadastrar {
-    font-family: 'Comfortaa', sans-serif;
     border: none;
     border-radius: 3px;
     color: #FFFFFF;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
     padding: 8px 16px;
     transition: all 150ms; 
 }

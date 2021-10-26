@@ -1,13 +1,13 @@
 .menu {
     display: flex;
-    background-color: #067BC2;
+    background-color: #2E4057;
     justify-content: space-between;
     vertical-align: middle;
 }
 
 .menu__titulo {
     color: #FFFFFF;
-    font-family: 'Merienda', cursive;
+    font-family: 'Comfortaa', sans-serif;
     font-size: 24px;
     padding: 24px;
     margin: 0;
@@ -26,6 +26,7 @@
 }
 
 .menu__items > a {
+    font-family: 'Comfortaa', sans-serif;
     color: #FFFFFF;
     text-decoration: none;
 }

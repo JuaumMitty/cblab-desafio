@@ -1,16 +1,24 @@
+.form__container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 76px);
+    justify-content: center;
+}
+
 .form {
     max-width: 1260px;
-    margin-top: 120px;
 }
 
 .form__action {
     border-radius: 3px;
-    background-color: #F9F9F9;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 15px #eeeeee;
     padding: 24px;
 }
 
 .form__label, .form__control{
-    color: #404040;
+    color: #2F2D2E;
     border: none;
     display: block;
     font-family: 'Comfortaa', sans-serif;
@@ -23,13 +31,18 @@
 }
 
 .form__control {
+    border: solid 1px #2F2D2E;
     border-radius: 3px;
     padding: 8px;
 }
 
+.form__control:focus {
+    border: solid 1px #F18F01;
+}
+
 .form_checkbox{
     font-family: 'Comfortaa', sans-serif;
-    color: #404040;
+    color: #2F2D2E;
     padding: 24px 0;
     display: flex;
     justify-content: start;
@@ -41,9 +54,6 @@
 
 .form_checkbox > input{
     margin-top: 5px;
-}
-.form__label:last-child, .form__control:last-child {
-    background-color: #404040;
 }
 
 .form__btn{
@@ -62,12 +72,12 @@
 }
 
 .form__btnSalvar {
-    background-color: #00B33B;
+    background-color: #99C24D;
     margin-left: 4px;
 }
 
 .form__btnCancelar {
-    background-color: #B30500;
+    background-color: #D33F49;
     text-decoration: none;
     text-align: center;
     margin-right: 4px;
